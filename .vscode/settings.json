@@ -1,0 +1,86 @@
+{
+    "python.pythonPath": "C:\\Python\\venv\\dbunit\\Scripts\\python.exe",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true,
+
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.testing.promptToConfigure": false,
+
+    "python.linting.flake8Args": ["--max-line-length=200"],
+
+    // 待办事项 插件配置
+    "todo-tree.tags": [	// 标签清单
+        "TODO",
+        "FIXME",
+        "TOTEST"
+    ],
+    "todo-tree.regexCaseSensitive": false,
+    "todo-tree.showInExplorer": true,
+    "todo-tree.defaultHighlight": {
+        "foreground": "black",
+        "background": "yellow",
+        "icon": "check",
+        "rulerColour": "yellow",
+        "type": "todo",
+        "iconColour": "yellow"
+    },
+    "todo-tree.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "foreground": "#000",
+            "background": "#cecb32",
+            "iconColour": "#fffc43"
+        },
+        "FIXME": {
+            "icon": "alert",
+            "foreground": "#fff",
+            "background": "#ca4848",
+            "iconColour": "#ff4343"
+        }
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "foreground": "#000",
+            "background": "#cecb32",
+            "iconColour": "#fffc43"
+        },
+        "FIXME": {
+            "icon": "alert",
+            "foreground": "#fff",
+            "background": "#ca4848",
+            "iconColour": "#ff4343"
+        }
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "foreground": "black",
+        "background": "yellow",
+        "icon": "check",
+        "rulerColour": "yellow",
+        "type": "todo",
+        "iconColour": "yellow"
+    },
+    "todo-tree.regex.regexCaseSensitive": false,
+    "todo-tree.tree.showInExplorer": true,
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "TOTEST"
+    ],
+    "markdownlint.config": {
+        "MD024": false,
+    },
+
+
+
+}
