@@ -30,8 +30,6 @@ class Test_DbUnit(unittest.TestCase):
     """测试DbUnit组件
     """
 
-    # TODO init中添加参数方面，特别是参数为空情况的测试
-
     def setUp(self):
         self.db_cfg = {
             'server_url': 'rm-bp13oao7f763scs44yo.mysql.rds.aliyuncs.com',
