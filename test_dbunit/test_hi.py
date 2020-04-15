@@ -1,5 +1,5 @@
 # import unittest
-from wdbd.dbunit import DbUnit
+# from dbunit import DbUnit
 # import wdbd.dbunit.utils as utils
 
 
@@ -27,9 +27,11 @@ if __name__ == "__main__":
 
     # dbu.reload()
 
-    try:
-        dbu = DbUnit()
-    except Exception:
-        print('io err')
+    # try:
+    #     dbu = DbUnit()
+    # except Exception:
+    #     print('io err')
+
+    print('Hi')
 
     pass

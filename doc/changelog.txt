@@ -1,0 +1,10 @@
+Changlog
+
+# v 0.1 
+
+- 首次发布
+- 支持mysql数据库
+
+# v 0.2
+
+- chg: 包名改为 dbunit

@@ -3,7 +3,7 @@
 import os
 import pandas as pd
 import tempfile
-import wdbd.dbunit.utils as utils
+import dbunit.utils as utils
 
 
 class DbUnitImpl:
