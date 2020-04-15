@@ -4,12 +4,11 @@ DbUnit，一款关系型数据库单元测试工具。
 
 仿造Java版本的DbUnit，其在单元测试setup中备份需要的数据库表，导入准备好的测试数据，在完成单元测试后在TearDown阶段使用之前备份的文件恢复数据库表原始内容。
 
-目前的版本是 v 0.1
+目前的版本是 v 0.2
 
-v 0.1版本的特点为：
+v 0.2版本的特点为：
 
-- 只支持mysql数据库；
-- 利用pandas io接口实现。
+- 包名改为 dbunit。
 
 ## 安装方式
 
@@ -29,8 +28,8 @@ pip install dbunit --upgrade
 
 ```python
 import unittest
-from wdbd.dbunit import DbUnit
-import wdbd.dbunit.utils as utils
+from dbunit import DbUnit
+import dbunit.utils as utils
 
 
 class TestDemo(unittest.TestCase):

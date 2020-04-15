@@ -1,4 +1,4 @@
-import wdbd.dbunit.dbunit as impl
+import dbunit.dbunit as impl
 
 
 # 单元测试

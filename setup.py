@@ -8,11 +8,11 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name='dbunit',
-    version=0.1,
+    version=0.2,
     description=(
         'Python写的一个仿Java DbUnit的数据库单元测试工具'
     ),
-    long_description=open('README.md', encoding="utf-8").read(),
+    long_description='dbunit',
     long_description_content_type="text/markdown",
     author='Wang Junjie',
     author_email='shwangjj@163.com',

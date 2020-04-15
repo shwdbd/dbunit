@@ -20,7 +20,7 @@ def get_logger():
     :param config_file_path: str 配置文件路径
     :return: logger日志器
     """
-    config_file_path = r'wdbd/dbunit/log.cfg'
+    config_file_path = r'dbunit/log.cfg'
 
     logging.config.fileConfig(config_file_path)
     return logging.getLogger('dbunit')
@@ -100,15 +100,15 @@ def get_session(engine):
         return None
 
 
-# if __name__ == "__main__":
-#     cfg = {
-#         'server_url': 'rm-bp13oao7f763scs44yo.mysql.rds.aliyuncs.com',
-#         'server_port': 3306,
-#         'db_name': 'fdata_dev',
-#         'user_id': 'root',
-#         'user_password': 'dev_61875707',
-#     }
-#     e = get_conn_engine(db_config=cfg)
-#     session = get_session(engine=e)
-#     print(e)
-#     print(session)
+if __name__ == "__main__":
+    cfg = {
+        'server_url': 'rm-bp13oao7f763scs44yo.mysql.rds.aliyuncs.com',
+        'server_port': 3306,
+        'db_name': 'fdata_dev',
+        'user_id': 'dev',
+        'user_password': 'dev_61875707',
+    }
+    e = get_conn_engine(db_config=cfg)
+    session = get_session(engine=e)
+    print(e)
+    print(session)

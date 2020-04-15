@@ -20,8 +20,8 @@
 
 '''
 import unittest
-from wdbd.dbunit import DbUnit
-import wdbd.dbunit.utils as utils
+from dbunit import DbUnit
+import dbunit.utils as utils
 import os
 import tempfile
 
@@ -113,14 +113,14 @@ class Test_DbUnit(unittest.TestCase):
         """测试 load_data 函数功能
         """
         dbu = DbUnit(db_engine=utils.get_conn_engine(db_config=self.db_cfg))
-        dbu.add_table('dbu_test_a', r'test\dbu_test_a.csv')
+        dbu.add_table('dbu_test_a', r'test_dbunit\dbu_test_a.csv')
         dbu.add_table('dbu_test_b')     # 无测试数据情况
         dbu.backup()
         dbu.load_data()
 
         # 检查 测试数据表情况
         test_data = {
-            'dbu_test_a': r'test\dbu_test_a.csv',
+            'dbu_test_a': r'test_dbunit\dbu_test_a.csv',
             'dbu_test_b': None,
         }
         self.assertDictEqual(test_data, dbu.test_data)
